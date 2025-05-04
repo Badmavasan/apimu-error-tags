@@ -9,10 +9,12 @@
 || **INSTRUCTION CONDITIONNELLE** ||
 | (**CS-Incorrect_Number_Branches**) Erreur nombre de branches IC | Oubli d’un cas ou mauvais recouvrement des branches | IC. Déterminer les branches nécessaires pour une IC<br>IC. Déterminer l'ensemble des expressions de manière à définir une partition de l'ensemble des cas d'une instruction conditionnelle |
 | (**CS-Body_Error**) Erreur dans les instructions d’une IC | Une instruction ne se trouve pas dans la bonne branche ou se trouve en dehors de l’IC | IC. Déterminer les instructions à exécuter pour chaque branche d'une instruction conditionnelle |
+| (**CS-Missing**) Instruction conditionnelle manquante | Absence de l’IC | IC. Produire une IC |
 || **FONCTIONS** ||
 | (**F-Definition_Error**) Erreur définition de la fonction | Liée aux consignes de l’énoncé ou à la gestion possible avec le reste du code :<br>- oubli de paramètres ou mauvais choix de paramètres<br>- erreur sur les préconditions des paramètres<br>- erreur sur ce qui est retourné ou non | F. Déterminer les paramètres (noms, types, valeurs par défaut) d'une fonction<br>F. Déterminer les préconditions d'exécution (par exemple : tableau trié dans une recherche dichotomique...)<br>F. Déterminer, le cas échéant, les éléments à retourner par une fonction |
 | (**F-Call_error**) Erreur dans l’appel de la fonction | Appel avec les mauvais paramètres ou pas d'affectation du résultat de la fonction | — |
 | (**F-Name_ParameterName_Error**) Erreur nom de la fonction ou des paramètres | Caractère interdit, mot réservé | F. Déterminer le nom d'une fonction<br>F. Déterminer les paramètres (noms, types, valeurs par défaut) d'une fonction |
+| (**F-Definition_Missing**) Definition d’une fonction absente | Absence d’une fonction | F. Produire une fonction |
 || **BOUCLES** ||
 | (**LO-Iterator_Usage_Error**) Erreur dans l'utilisation de l'itérateur de la boucle | L'apprenant s'est trompé dans les valeurs prises par l'itérateur (valeur de départ par exemple) | B. Déterminer si une (ou plusieurs) instruction(s) du corps d'une boucle bornée utilise(nt) l'itérateur |
 | (**LO-Number_Iteration_Error_Under2**) Erreur nombre d’itérations de la boucle (à un près) | La boucle s'exécute une fois de trop ou une fois de moins | B. Déterminer le nombre d'itérations à réaliser pour une boucle bornée |
@@ -23,6 +25,8 @@
 | (**LO-Body_Missing_Present**) Erreur dans le corps de la boucle : Instruction manquante et présente ailleurs dans le programme | Instruction présente ailleurs dans le programme | B. Déterminer les instructions à exécuter à chaque itération d’une boucle bornée<br>B. Déterminer les instructions à exécuter à chaque itération pour une boucle non bornée |
 | (**LO-Body_Error_Almost_Correct**) Erreur dans le corps de la boucle : Instruction erronée et proche de l’attendu | Instruction présente proche de celle manquante | B. Déterminer les instructions à exécuter à chaque itération d’une boucle bornée<br>B. Déterminer les instructions à exécuter à chaque itération pour une boucle non bornée |
 | (**LO-Body_Error_Wrong**) Erreur dans le corps de la boucle : Instruction erronée et non voulue | Rien à voir avec attendu : cas instruction "en trop" | B. Déterminer les instructions à exécuter à chaque itération d’une boucle bornée<br>B. Déterminer les instructions à exécuter à chaque itération pour une boucle non bornée |
+| (**LO-For_Missing**) Boucle FOR manquante | Absence d’une boucle FOR | B. Produire une boucle bornée |
+| (**LO-While_Missing**) Boucle WHILE manquante | Absence d’une boucle WHILE | B. Produire une boucle non bornée |
 || **EXPRESSIONS** ||
 | (**EXP-Error_Conditional_Branch**) Erreur dans l'expression booléenne d'une des branches d'une IC | Test si une variable est < au lieu de ≤ par exemple | IC. Déterminer l'expression booléenne correspondant à une branche d'une instruction conditionnelle |
 | (**EXP-Error_Assignment_Variable**) Erreur dans l'expression affectée à une variable | Oubli d'une partie de l'expression, ou mauvais choix du signe | VA. Affecter la valeur d'une expression à une variable |
